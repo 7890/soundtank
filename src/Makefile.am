@@ -8,4 +8,4 @@ soundtank_SOURCES = soundtank.c soundtank_startup.c soundtank_types.c buffer.c c
 
 soundtank_LDFLAGS = `xml2-config --libs`
 
-soundtank_LDADD = -lasound -ljack -lpopt -lreadline -lncurses 
+soundtank_LDADD = -lasound -ljack -lpopt -lreadline -lncurses -lm -ldl
